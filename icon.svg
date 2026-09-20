@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#grad)" />
+  
+  <!-- Box / Warehouse Package Icon -->
+  <g filter="url(#shadow)" transform="translate(106, 96)">
+    <!-- Isometric Top Face -->
+    <path d="M150 20 L275 82 L150 144 L25 82 Z" fill="#7dd3fc" />
+    <!-- Isometric Left Face -->
+    <path d="M25 82 L150 144 L150 280 L25 218 Z" fill="#0284c7" />
+    <!-- Isometric Right Face -->
+    <path d="M150 144 L275 82 L275 218 L150 280 Z" fill="#0369a1" />
+    
+    <!-- Box Tape / Strip -->
+    <path d="M135 27 L165 42 L165 137 L135 122 Z" fill="#e0f2fe" opacity="0.9" />
+    <path d="M135 122 L165 137 L165 273 L135 258 Z" fill="#bae6fd" opacity="0.9" />
+
+    <!-- Barcode Badge on box -->
+    <rect x="50" y="145" width="70" height="42" rx="4" fill="#ffffff" transform="skewY(26.5)" opacity="0.95" />
+    <!-- Barcode lines -->
+    <path d="M56 150 v24 M61 150 v24 M65 150 v24 M72 150 v24 M76 150 v24 M83 150 v24 M90 150 v24 M97 150 v24 M103 150 v24 M110 150 v24" 
+          stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" transform="skewY(26.5)" />
+          
+    <!-- Checkmark Badge on right -->
+    <circle cx="230" cy="225" r="42" fill="#10b981" stroke="#ffffff" stroke-width="6" />
+    <path d="M214 225 L225 236 L247 214" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
