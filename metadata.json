@@ -1,0 +1,10 @@
+{
+  "name": "ARTEMISA APK - Gestión de Stock",
+  "description": "Aplicación móvil y web para gestión de stock, artículos por código, carga y descarga inteligente mediante archivos PDF y ajuste manual de inventario.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
