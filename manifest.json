@@ -31,7 +31,7 @@
       "purpose": "maskable"
     },
     {
-      "src": "/icon.svg",
+      "src": "public/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
