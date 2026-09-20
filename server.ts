@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
@@ -163,6 +164,30 @@ async function startServer() {
   // Support large PDF base64 payloads
   app.use(express.json({ limit: "30mb" }));
   app.use(express.urlencoded({ limit: "30mb", extended: true }));
+
+  // Explicit handlers for root PWA manifest and service worker
+  app.get("/manifest.json", (_req, res) => {
+    const rootPath = path.join(process.cwd(), "manifest.json");
+    const publicPath = path.join(process.cwd(), "public", "manifest.json");
+    res.setHeader("Content-Type", "application/manifest+json; charset=utf-8");
+    if (fs.existsSync(rootPath)) {
+      res.sendFile(rootPath);
+    } else {
+      res.sendFile(publicPath);
+    }
+  });
+
+  app.get("/sw.js", (_req, res) => {
+    const rootPath = path.join(process.cwd(), "sw.js");
+    const publicPath = path.join(process.cwd(), "public", "sw.js");
+    res.setHeader("Content-Type", "application/javascript; charset=utf-8");
+    res.setHeader("Service-Worker-Allowed", "/");
+    if (fs.existsSync(rootPath)) {
+      res.sendFile(rootPath);
+    } else {
+      res.sendFile(publicPath);
+    }
+  });
 
   // Health check endpoint
   app.get("/api/health", (_req, res) => {

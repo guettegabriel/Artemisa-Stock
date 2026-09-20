@@ -1,0 +1,83 @@
+{
+  "id": "/",
+  "name": "ARTEMISA APK - Gestión de Stock",
+  "short_name": "ARTEMISA",
+  "description": "Aplicación móvil y web para gestión de stock, artículos por código, carga y descarga inteligente mediante archivos PDF y ajuste manual de inventario.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "lang": "es",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "Escanear / Cargar PDF",
+      "short_name": "Carga PDF",
+      "description": "Carga y descarga inteligente de stock desde documentos PDF",
+      "url": "/?tab=pdf",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Inventario de Artículos",
+      "short_name": "Artículos",
+      "description": "Ver catálogo y existencias de productos",
+      "url": "/?tab=articulos",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Ajuste de Stock",
+      "short_name": "Ajuste",
+      "description": "Ajuste manual de inventario y saldos",
+      "url": "/?tab=ajuste",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
