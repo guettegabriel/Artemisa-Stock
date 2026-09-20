@@ -13,19 +13,19 @@
   "dir": "ltr",
   "icons": [
     {
-      "src": "/pwa-192x192.png",
+      "src": "public/pwa-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/pwa-512x512.png",
+      "src": "public/pwa-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/pwa-maskable-512x512.png",
+      "src": "public/pwa-maskable-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -50,7 +50,7 @@
       "url": "/?tab=pdf",
       "icons": [
         {
-          "src": "/pwa-192x192.png",
+          "src": "public/pwa-192x192.png",
           "sizes": "192x192"
         }
       ]
@@ -62,7 +62,7 @@
       "url": "/?tab=articulos",
       "icons": [
         {
-          "src": "/pwa-192x192.png",
+          "src": "public/pwa-192x192.png",
           "sizes": "192x192"
         }
       ]
@@ -74,7 +74,7 @@
       "url": "/?tab=ajuste",
       "icons": [
         {
-          "src": "/pwa-192x192.png",
+          "src": "public/pwa-192x192.png",
           "sizes": "192x192"
         }
       ]
